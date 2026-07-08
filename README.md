@@ -133,6 +133,7 @@ Image-Caption-Generator/
 ## 👩‍💻 Author
 
 **Steena Susan Abraham**
+**Shreya Das Gupta**
 
 Bachelor of Computer Applications (BCA)
 
