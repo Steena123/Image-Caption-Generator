@@ -1,9 +1,9 @@
-# 🖼️ Image Caption Generator using Deep Learning
+#  Image Caption Generator using Deep Learning
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange?style=for-the-badge&logo=tensorflow)
-![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?style=for-the-badge&logo=keras)
-![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ---
 
