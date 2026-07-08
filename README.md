@@ -1,117 +1,142 @@
-# Image Caption Generator using Deep Learning
+# 🖼️ Image Caption Generator using Deep Learning
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-This project implements an **AI-powered Image Caption Generator** that automatically generates descriptive captions for images by integrating **Computer Vision** and **Natural Language Processing (NLP)** techniques. The model learns visual features from images using a Convolutional Neural Network (CNN) and generates meaningful English descriptions through a Long Short-Term Memory (LSTM) network.
+## 📖 Overview
 
-The project demonstrates how deep learning can bridge the gap between visual understanding and natural language generation, with applications in accessibility, robotics, autonomous systems, and intelligent multimedia analysis.
+This project implements an **AI-powered Image Caption Generator** that combines **Computer Vision** and **Natural Language Processing (NLP)** to automatically generate descriptive captions for images.
+
+The model follows an **Encoder–Decoder architecture**, where a pre-trained Convolutional Neural Network (CNN) extracts visual features from an image, and a Long Short-Term Memory (LSTM) network generates natural language captions word by word.
+
+This project demonstrates the practical application of deep learning techniques for multimodal learning by integrating image understanding with language generation.
 
 ---
 
 ## 🎯 Objectives
 
-* Generate meaningful English captions for input images.
-* Extract high-level visual features using a pre-trained CNN model.
-* Produce natural language descriptions using an LSTM-based sequence model.
-* Demonstrate the integration of Computer Vision and NLP in an end-to-end AI application.
+- Generate descriptive captions for unseen images.
+- Extract high-level visual features using a pre-trained CNN.
+- Learn language patterns using an LSTM-based decoder.
+- Demonstrate an end-to-end deep learning pipeline for image captioning.
 
 ---
 
-## 🚀 Features
+# 🏗️ Model Architecture
 
-* Automatic image caption generation
-* Deep learning-based image understanding
-* CNN-based feature extraction
-* LSTM-based sentence generation
-* Image preprocessing and caption tokenization
-* End-to-end image captioning pipeline
+The model consists of two parallel branches:
+
+- **Image Encoder:** Extracts image features using a CNN.
+- **Caption Decoder:** Processes caption sequences using an Embedding layer and LSTM.
+- The extracted image features and language features are merged before predicting the next word in the caption.
+
+<p align="center">
+<img src="images/model_architecture.png" width="700">
+</p>
 
 ---
 
-## 🛠️ Technologies Used
+# 🖼️ Sample Prediction
 
-* Python
-* TensorFlow / Keras
-* Google Colab
-* NumPy
-* Pandas
-* Matplotlib
-* CNN (Convolutional Neural Network)
-* LSTM (Long Short-Term Memory)
+The figure below demonstrates the model generating a caption for an unseen image.
+
+<p align="center">
+<img src="images/sample_prediction.png" width="700">
+</p>
+
+The model predicts captions sequentially by combining the visual representation of the image with previously generated words.
+
+---
+
+## ⚙️ Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- Google Colab
+- NumPy
+- Pandas
+- Matplotlib
+- Pillow
+
+---
+
+## 🧠 AI Concepts Applied
+
+- Deep Learning
+- Computer Vision
+- Natural Language Processing
+- Convolutional Neural Networks (CNN)
+- Long Short-Term Memory (LSTM)
+- Transfer Learning
+- Sequence Modeling
+- Feature Extraction
 
 ---
 
 ## 📂 Dataset
 
-This project uses the **Flickr Image Dataset** containing thousands of images paired with human-written captions for training and evaluation.
+The project was trained using the **Flickr8k Image Caption Dataset**, which contains images paired with multiple human-written captions.
+
+> **Note:** The dataset is not included in this repository due to its size and licensing restrictions.
 
 ---
 
-## 🧠 Model Architecture
+## 🚀 Project Workflow
 
-The project follows an Encoder–Decoder architecture:
-
-**Encoder (CNN)**
-
-* Extracts meaningful visual features from the input image.
-
-**Decoder (LSTM)**
-
-* Uses the extracted features to generate a sequence of words that forms a natural language caption.
+1. Load and preprocess the Flickr8k dataset.
+2. Extract image features using a pre-trained CNN.
+3. Clean and tokenize image captions.
+4. Train the LSTM-based caption generation model.
+5. Generate captions for unseen images.
 
 ---
 
-## ⚙️ Project Workflow
+## 🎯 Applications
 
-1. Import required libraries.
-2. Load and preprocess the Flickr dataset.
-3. Extract image features using a pre-trained CNN.
-4. Clean and tokenize image captions.
-5. Train the LSTM caption generation model.
-6. Generate captions for unseen images.
-
----
-
-## 📌 Applications
-
-* Assistive technology for visually impaired individuals
-* Image indexing and retrieval
-* Social media caption generation
-* Robotics
-* Autonomous vehicles
-* Intelligent surveillance systems
+- Assistive technology for visually impaired users
+- Automatic image annotation
+- Image search and retrieval
+- Social media caption generation
+- Intelligent multimedia systems
+- Human-computer interaction
 
 ---
 
-## 📈 Future Enhancements
+## 📈 Future Improvements
 
-* Integrate attention mechanisms for improved caption quality.
-* Replace CNN-LSTM with Transformer-based models such as BLIP or ViT-GPT.
-* Deploy the model as a web application using Flask or Streamlit.
-* Improve performance using larger datasets such as MS COCO.
+- Replace the CNN–LSTM architecture with Transformer-based models such as BLIP or ViT-GPT2.
+- Improve caption quality using attention mechanisms.
+- Evaluate the model using BLEU, METEOR, and CIDEr metrics.
+- Deploy the application as a web application using Streamlit or Flask.
 
 ---
 
-## 🎓 Learning Outcomes
+## 📁 Repository Structure
 
-This project strengthened practical knowledge in:
-
-* Artificial Intelligence
-* Deep Learning
-* Computer Vision
-* Natural Language Processing
-* Neural Networks
-* Transfer Learning
-* Image Feature Extraction
-* Sequence Modeling
+```
+Image-Caption-Generator/
+│── Image_Caption_Generator.ipynb
+│── README.md
+│── requirements.txt
+│── Image_Caption_Generator_Report.pdf
+│
+└── images/
+    ├── model_architecture.png
+    └── sample_prediction.png
+```
 
 ---
 
 ## 👩‍💻 Authors
 
-* **Steena Susan Abraham**
-* **Shreya Das Gupta**
-  
+**Steena Susan Abraham**
+
+Bachelor of Computer Applications (BCA)
+
+Project completed as part of undergraduate coursework and included here as a demonstration of practical experience in Artificial Intelligence, Deep Learning, Computer Vision, and Natural Language Processing.
 
 ---
 
