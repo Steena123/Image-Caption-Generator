@@ -129,6 +129,14 @@ Image-Caption-Generator/
 - Deploy the model as a web application using Streamlit or Flask.
 
 ---
+## 📄 Project Documentation
+
+This repository includes:
+
+- 📘 **Project Report:** `Image_Caption_Generator_Report.pdf`
+- 📊 **Project Presentation:** `Image_Caption_Generator_Presentation.pptx`
+- 💻 **Source Code:** `Image_Caption_Generator.ipynb`
+---
 
 ## 👩‍💻 Author
 
